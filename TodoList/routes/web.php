@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/Taskpage');
 });
 
 Route::get('/accueil', function () {
@@ -21,4 +21,11 @@ Route::get('/accueil', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware(['auth'])->group(function() {
+    Route::resource('tasks', 'TaskController', [
+        'only' => [
+            'index', 'store', 'update'
+        ]
+    ]);
+
+});

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -36,4 +36,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+ * Set and encrypt the password attribute.
+ *
+ * @param $value
+ */
+public function setPasswordAttribute($value)
+{
+    $this->attributes['password'] = bcrypt($value);
+}
+
+/**
+ * The relationship to the user's tasks.
+ *
+ * @return \Illuminate\Database\Eloquent\Relations\HasMany
+ */
+public function tasks()
+{
+    return $this->hasMany(Task::class);
+}
+
 }
