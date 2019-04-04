@@ -30,7 +30,7 @@
         <!--Liens réseaux sociaux-->
 
         <div class="col-xl-4 col-md-4 col-sm-12 col-12 pb-4">
-            <h2>Suivez-nous</h2>
+
 
             <div class="flex-logo">
                 <a><img src="./img/logo_fb.png" alt="Facebook" class="rounded logo-social"></a>

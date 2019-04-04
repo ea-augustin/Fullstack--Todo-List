@@ -9,19 +9,19 @@
                             <!-- Front -->
                             <ul class='hardcover_front'>
                                 <li>
-                                    <img src="img/bureau.png" alt="" width="100%" height="100%">
+                                    <img src="img/finance.jpg" alt="" width="100%" height="100%">
                                 </li>
                                 <li></li>
                             </ul>
                             <!-- Pages -->
                             <ul class='page'>
-                                <li></li>
+                                <li> <img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li>
-                                    <a class="btn" href="#">commencez</a>
+                                    <img src="img/todo.jpeg" alt="" width="100%" height="100%">
                                 </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>  <img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li>  <img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li>  <img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                             </ul>
                             <!-- Back -->
                             <ul class='hardcover_back'>
@@ -42,21 +42,17 @@
                             <ul class='hardcover_front'>
                                 <li>
 
-                                    <img src="img/lois.jpg" alt="" width="100%" height="100%">
+                                    <img src="img/demarche.jpg" alt="" width="100%" height="100%">
                                 </li>
                                 <li></li>
                             </ul>
                             <!-- Pages -->
                             <ul class='page'>
-                                <li id="color"></li>
-                                <li id="color">
-
-                                    <a class="btn" href="#">commencez</a>
-
-                                </li>
-                                <li id="color"></li>
-                                <li id="color"></li>
-                                <li id="color"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                             </ul>
                             <!-- Back -->
                             <ul class='hardcover_back'>
@@ -76,19 +72,19 @@
                             <!-- Front -->
                             <ul class='hardcover_front'>
                                 <li>
-                                    <img src="img/quoifaire.jpg" alt="" width="100%" height="100%">
+                                    <img src="img/divers.jpg" alt="" width="100%" height="100%">
                                 </li>
                                 <li></li>
                             </ul>
                             <!-- Pages -->
                             <ul class='page'>
-                                <li></li>
+                                <li> <img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li>
-                                    <a class="btn" href="#">commencez</a>
+                                    <img src="img/todo.jpeg" alt="" width="100%" height="100%">
                                 </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
+                                <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                             </ul>
                             <!-- Back -->
                             <ul class='hardcover_back'>

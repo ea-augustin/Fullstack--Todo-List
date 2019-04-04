@@ -4,3 +4,4 @@
 <title>My todo list</title>
 <!-- load bootstrap from a cdn -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/3.0.3/css/bootstrap-combined.min.css">
+<link rel="shortcut icon" type="images/x-icon" href="img/logo.png"/>
