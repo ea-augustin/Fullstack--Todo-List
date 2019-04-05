@@ -1,7 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+  <!---->
+   <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="Tasks">
+    <a class="dropdown-item" href="#">Finances</a>
+    <a class="dropdown-item" href="#">Démarch Administratives</a>
+    <a class="dropdown-item" href="#">Divers</a>
+  </div>
+</div>
+<div class="container mt-10">
     <div class="row justify-content-center">
         <div class="col-md-8">
             @if (session('status'))
