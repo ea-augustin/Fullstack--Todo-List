@@ -61,7 +61,7 @@
                             <ul class='page'>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%" position="relative">
-                                <button id="btnDessus"><a href="/2">choisir</a></button></li>
+                                <button id="btnDessus"><a href=@auth"/2"@else"login"@endauth>choisir</a></button></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
