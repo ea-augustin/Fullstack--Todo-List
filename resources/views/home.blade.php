@@ -26,7 +26,7 @@
                             <ul class='page'>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%" position="relative">
-                                    <button id="btnDessus">choisir</button></li>
+                                      <button id="btnDessus"><a href="/1">choisir</a></button></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
@@ -61,7 +61,7 @@
                             <ul class='page'>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%" position="relative">
-                                    <button id="btnDessus">choisir</button></li>
+                                <button id="btnDessus"><a href="/2">choisir</a></button></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
@@ -92,7 +92,7 @@
                             <ul class='page'>
                                 <li> <img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%" position="relative">
-                                    <button id="btnDessus">choisir</button></li>
+                                    <button id="btnDessus"><a href="/3">choisir</a></button></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>
                                 <li><img src="img/todo.jpeg" alt="" width="100%" height="100%"></li>

@@ -76,4 +76,20 @@ class TaskController extends Controller
         // redirect to tasks index
         return redirect('/tasks');
     }
+
+    public function delete(Task $task)
+    {
+        // check if the authenticated user can completed the task
+        $this->authorize('complete', $task);
+
+        // mark the task as complete and delete it
+        $task->is_complete = true;
+        $task->delete();
+
+        // flash a success message to the session
+        session()->flash('status', 'Task Deleted!');
+
+        // redirect to tasks index
+        return redirect('/tasks');
+    }
 }

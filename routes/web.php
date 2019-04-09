@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-
     return view('home');
 
 });
@@ -23,6 +22,17 @@ Route::get('/accueil', function () {
 
     Route::get('/home', function () {
         return view('home');
+});
+
+Route::get('/{n}', 'categoryController@show')->where('n', '[0-9]+');
+
+
+Route::get('/category/2', function () {
+    return view('tasks');
+});
+
+Route::get('/category/3', function () {
+    return view('tasks');
 });
 
 Route::get('/boite', function () {
@@ -40,7 +50,7 @@ Auth::routes();
 Route::middleware(['auth'])->group(function() {
     Route::resource('tasks', 'TaskController', [
         'only' => [
-            'index', 'store', 'update'
+            'index', 'store', 'update','delete'
         ]
     ]);
 

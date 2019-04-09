@@ -60,6 +60,7 @@
                                            @csrf
                                            @method('PATCH')
                                            <button id="conex2"type="submit" class="btn">Complete</button>
+
                                        </form>
                                    @endif
                                </td>
@@ -67,7 +68,7 @@
                        @endforeach
                    </table>
 
-                    {{ $tasks->links() }}
+                    <!-- $tasks->links() -->
                 </div>
             </div>
         </div>
