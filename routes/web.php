@@ -27,13 +27,7 @@ Route::get('/accueil', function () {
 Route::get('/{n}', 'categoryController@show')->where('n', '[0-9]+');
 
 
-Route::get('/category/2', function () {
-    return view('tasks');
-});
 
-Route::get('/category/3', function () {
-    return view('tasks');
-});
 
 Route::get('/boite', function () {
     return view('pages/boite');

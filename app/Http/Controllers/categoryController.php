@@ -56,10 +56,12 @@ class categoryController extends Controller
      */
     public function show($id)
     {
+      session(['category_id' => $id]);
+
       $tasks = Task::all()->where("category_id",$id);
       return view('tasks', [
-          'tasks' => $tasks
-      ]);
+          'tasks' => $tasks]);
+
     }
 
     /**

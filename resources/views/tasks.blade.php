@@ -15,6 +15,7 @@
 <div class="container mt-10">
     <div class="row justify-content-center">
         <div class="col-md-8">
+
             @if (session('status'))
                 <div class="alert alert-success" role="alert">
                     {{ session('status') }}
@@ -35,6 +36,7 @@
                                     <strong>{{ $errors->first('title') }}</strong>
                                 </span>
                             @endif
+
                         </div>
                         <button id="conex2" type="submit" class="btn">créer</button>
                     </form>

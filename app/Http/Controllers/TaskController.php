@@ -45,6 +45,7 @@ class TaskController extends Controller
         Auth::user()->tasks()->create([
             'title' => $data['title'],
             'is_complete' => false,
+            'category_id' => session('category_id')
         ]);
 
         // flash a success message to the session
