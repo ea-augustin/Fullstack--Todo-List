@@ -52,7 +52,8 @@ class TaskController extends Controller
         session()->flash('status', 'Task Created!');
 
         // redirect to tasks index
-        return redirect('/tasks');
+        //return redirect('/tasks');
+        return redirect()->back();
     }
 
     /**
