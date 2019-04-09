@@ -7,9 +7,9 @@
     Dropdown button
   </button>
   <div class="dropdown-menu" aria-labelledby="Tasks">
-    <a class="dropdown-item" href="#">Finances</a>
-    <a class="dropdown-item" href="#">Démarch Administratives</a>
-    <a class="dropdown-item" href="#">Divers</a>
+    <a class="dropdown-item" href="/1">Finances</a>
+    <a class="dropdown-item" href="/2">Démarch Administratives</a>
+    <a class="dropdown-item" href="/3">Divers</a>
   </div>
 </div>
 <div class="container mt-10">
