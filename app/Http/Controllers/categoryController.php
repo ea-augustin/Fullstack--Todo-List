@@ -57,11 +57,11 @@ class categoryController extends Controller
     public function show($id)
     {
       session(['category_id' => $id]);
-
-      $tasks = Task::all()->where("category_id",$id);
+      $idu=Auth::id();
+      $tasks = Task::all()->where("category_id",$id)->where('user_id',$idu);
       return view('tasks', [
-          'tasks' => $tasks]);
-
+      'tasks' => $tasks]);
+      //  return $idu;
     }
 
     /**
