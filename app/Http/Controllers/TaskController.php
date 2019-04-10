@@ -76,7 +76,8 @@ class TaskController extends Controller
         session()->flash('status', 'Task Completed!');
 
         // redirect to tasks index
-        return redirect('/tasks');
+        //return redirect('/tasks');
+        return redirect()->back();
     }
 
     public function delete(Task $task)
@@ -92,6 +93,7 @@ class TaskController extends Controller
         session()->flash('status', 'Task Deleted!');
 
         // redirect to tasks index
-        return redirect('/tasks');
+        //return redirect('/tasks');
+        return redirect()->back();
     }
 }
