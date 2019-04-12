@@ -80,14 +80,10 @@ class TaskController extends Controller
         return redirect()->back();
     }
 
-    public function delete(Task $task)
+    public function destroy($id)
     {
-        // check if the authenticated user can completed the task
-        $this->authorize('complete', $task);
-
-        // mark the task as complete and delete it
-        $task->is_complete = true;
-        $task->delete();
+      Task::find($id)->delete();
+        // check if the authenticated user can delete the task
 
         // flash a success message to the session
         session()->flash('status', 'Task Deleted!');

@@ -58,13 +58,18 @@
                                </td>
                                <td class="text-right">
                                    @if (! $task->is_complete)
+                                     <div style='display:flex;'>
+
+
                                        <form method="POST" action="{{ route('tasks.update', $task->id) }}">
                                            @csrf
                                            @method('PATCH')
                                            <button id="conex2"type="submit" class="btn">Complete</button>
-                                           <button id="conex2"type="submit" class="btn">Delete</button>
 
                                        </form>
+                                       <button style="margin-right:.5em; "id="conex4"  onclick="location.href='/destroy/{{$task->id}}'" class="btn">Delete</button>
+</div>
+
                                    @endif
                                </td>
                            </tr>

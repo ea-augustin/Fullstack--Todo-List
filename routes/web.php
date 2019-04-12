@@ -38,6 +38,9 @@ Route::get('/boite', function () {
 Route::get('/about', function () {
     return view('pages.about');
 });
+
+Route::get('/destroy/{n}', 'TaskController@destroy')->where('n', '[0-9]+');
+
 ////////
 Auth::routes(['verify' => true]);
 

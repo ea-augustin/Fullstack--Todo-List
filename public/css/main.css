@@ -67,7 +67,7 @@ body {
     color: white;
 }
 
-#conex2 {
+#conex2{
     background-color: lightgray;
     color: #1b1e21;
     border: none;
@@ -81,6 +81,22 @@ body {
     background-color: #a79c81;
     color: white;
 }
+
+#conex4{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#conex4:hover {
+    background-color: red;
+    color: white;
+}
+
 
 .navbar-laravel{
     background-color:beige;
