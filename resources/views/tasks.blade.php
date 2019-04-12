@@ -62,6 +62,7 @@
                                            @csrf
                                            @method('PATCH')
                                            <button id="conex2"type="submit" class="btn">Complete</button>
+                                           <button id="conex2"type="submit" class="btn">Delete</button>
 
                                        </form>
                                    @endif

@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'in-v3.mailjet.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'elistar88@msn.com'),
+        'name' => env('MAIL_FROM_NAME', 'Do not Reply'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('4ad636a97cce87899d02bdc27ed9e9c0'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('5692c45e44281ae163598a54bb3dc8d4'),
 
     /*
     |--------------------------------------------------------------------------

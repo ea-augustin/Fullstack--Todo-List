@@ -38,8 +38,15 @@ Route::get('/boite', function () {
 Route::get('/about', function () {
     return view('pages.about');
 });
+////////
+Auth::routes(['verify' => true]);
 
-Auth::routes();
+Route::get('profile', function () {
+    // Only verified users may enter...
+})->middleware('verified');
+///////
+
+//Auth::routes();
 
 Route::middleware(['auth'])->group(function() {
     Route::resource('tasks', 'TaskController', [
