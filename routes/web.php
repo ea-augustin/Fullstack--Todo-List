@@ -24,6 +24,8 @@ Route::get('/accueil', function () {
         return view('home');
 });
 
+Route::get('/mail', 'MailController@send');
+
 Route::get('/{n}', 'categoryController@show')->where('n', '[0-9]+');
 
 

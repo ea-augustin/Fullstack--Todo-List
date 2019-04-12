@@ -71,7 +71,7 @@ body {
     background-color: lightgray;
     color: #1b1e21;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: 0.3s;
     text-align: center;
     margin-top: 5px;
@@ -86,7 +86,7 @@ body {
     background-color: black;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: 0.3s;
     text-align: center;
     margin-top: 5px;

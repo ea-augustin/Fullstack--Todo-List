@@ -1,29 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
-  <!---->
-   <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="Tasks">
-    <a class="dropdown-item" href="/1">Finances</a>
-    <a class="dropdown-item" href="/2">Démarch Administratives</a>
-    <a class="dropdown-item" href="/3">Divers</a>
-  </div>
+
+<div class="dropdown">
+    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Dropdown Button
+    </button>
+    <div id="dpb" class="dropdown-menu" aria-labelledby="Tasks">
+        <ul>
+            <li><a class="dropdown-item" href="/1">Finances</a></li>
+            <li><a class="dropdown-item" href="/2">Démarch Administratives</a></li>
+            <li><a class="dropdown-item" href="/3">Divers</a></li>
+        </ul>
+    </div>
 </div>
+
 <div class="container mt-10">
     <div class="row justify-content-center">
         <div class="col-md-8">
 
             @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
-                </div>
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
             @endif
-
+<h1 id="titleM">Add Header here</h1>
             <div class="card card-new-task">
-                <div class="card-header">Nouvelle tache</div>
+                <div class="card-header">Nouvelle Tache</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('tasks.store') }}">
@@ -32,9 +35,9 @@
                             <label for="title">Title</label>
                             <input id="title" name="title" type="text" maxlength="255" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" autocomplete="off" />
                             @if ($errors->has('title'))
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('title') }}</strong>
-                                </span>
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('title') }}</strong>
+                            </span>
                             @endif
 
                         </div>
@@ -42,39 +45,40 @@
                     </form>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-header">Mes taches</div>
 
                 <div class="card-body">
-                   <table class="table table-striped">
-                       @foreach ($tasks as $task)
-                           <tr>
-                               <td>
-                                   @if ($task->is_complete)
-                                       <s>{{ $task->title }}</s>
-                                   @else
-                                       {{ $task->title }}
-                                   @endif
-                               </td>
-                               <td class="text-right">
-                                   @if (! $task->is_complete)
-                                     <div style='display:flex;'>
+                    <table class="table table-striped">
+                        @foreach ($tasks as $task)
+                        <tr>
+                            <td>
+                                @if ($task->is_complete)
+                                <s>{{ $task->title }}</s>
+                                @else
+                                {{ $task->title }}
+                                @endif
+                            </td>
+                            <td class="text-right">
+                                @if (! $task->is_complete)
+                                <div style='display:flex;'>
 
 
-                                       <form method="POST" action="{{ route('tasks.update', $task->id) }}">
-                                           @csrf
-                                           @method('PATCH')
-                                           <button id="conex2"type="submit" class="btn">Complete</button>
+                                    <form method="POST" action="{{ route('tasks.update', $task->id) }}">
+                                        @csrf
+                                        @method('PATCH')
+                                        <button id="conex2" type="submit" class="btn">Complete</button>
 
-                                       </form>
-                                       <button style="margin-right:.5em; "id="conex4"  onclick="location.href='/destroy/{{$task->id}}'" class="btn">Delete</button>
-</div>
+                                    </form>
+                                    <button style="margin-right:.5em; " id="conex4" onclick="location.href='/destroy/{{$task->id}}'" class="btn">Delete</button>
+                                </div>
 
-                                   @endif
-                               </td>
-                           </tr>
-                       @endforeach
-                   </table>
+                                @endif
+                            </td>
+                        </tr>
+                        @endforeach
+                    </table>
 
                     <!-- $tasks->links() -->
                 </div>
