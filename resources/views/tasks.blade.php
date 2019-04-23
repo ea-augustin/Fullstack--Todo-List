@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="dropdown">
-    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Dropdown Button
     </button>
-    <div id="dropmen" class="dropdown-menu" aria-labelledby="Tasks">
+    <div id="dropmen" c type="text/javascript"lass="dropdown-menu" aria-labelledby="Tasks">
         <ul>
             <li><a class="dropdown-item" href="/1">Finances</a></li>
             <li><a class="dropdown-item" href="/2">Démarch Administratives</a></li>
@@ -14,6 +14,7 @@
         </ul>
     </div>
 </div>
+
 
 <div class="container mt-10">
     <div class="row justify-content-center">
@@ -24,9 +25,7 @@
                 {{ session('status') }}
             </div>
             @endif
-            <h1 id="option1" class="content">Finances</h1>
-            <h1 id="option2" class="content">Démarch Administratives</h1>
-            <h1 id="option3" class="content">Divers</h1>
+            <h1 class="content">{{ $category }}</h1>
 
             <div class="card card-new-task">
                 <div class="card-header">Nouvelle Tache</div>
@@ -89,4 +88,5 @@
         </div>
     </div>
 </div>
+
 @endsection

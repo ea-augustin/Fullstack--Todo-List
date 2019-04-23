@@ -56,12 +56,26 @@ class categoryController extends Controller
      */
     public function show($id)
     {
+      switch ($id) {
+        case '1':
+          $cat = "Finances";
+          break;
+
+          case '2':
+            $cat = "Démarches Administratives";
+            break;
+
+        default:
+          $cat = "Divers";
+          break;
+      }
+
       session(['category_id' => $id]);
       //Link tasks to id.
       $idu=Auth::id();
       $tasks = Task::all()->where("category_id",$id)->where('user_id',$idu);
-      return view('tasks', [
-      'tasks' => $tasks]);
+      return view('tasks')->with(
+      'tasks', $tasks)->with('category', $cat);
       //  return $idu;
     }
 

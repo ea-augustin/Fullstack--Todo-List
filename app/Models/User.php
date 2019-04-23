@@ -38,7 +38,7 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
     /**
- * Set and encrypt the password attribute.
+ * Set and encrypt/Hash the password attribute.
  *
  * @param $value
  */

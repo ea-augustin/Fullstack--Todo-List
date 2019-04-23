@@ -5,9 +5,9 @@
 
         <!--Liens vers autres sites-->
 
-       <ul class="col-xl-4 col-md-4 col-sm-6 col-12 pb-4">
-           <h2><a href="boite">Boite à idées</a></h2>
-        </ul>
+        <ul class="col-xl-4 col-md-4 col-sm-6 col-12 pb-4">
+            <a href="{{url('about')}}"><img src="img/about.png" width="80px" height="80px"></img></a>
+         </ul>
 
         <!--Liens téléchargement application-->
 

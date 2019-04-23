@@ -28,13 +28,9 @@ Route::get('/mail', 'MailController@send');
 
 Route::get('/{n}', 'categoryController@show')->where('n', '[0-9]+');
 
-
-
-
-Route::get('/boite', function () {
-    return view('pages/boite');
-});
-
+//contacts
+Route::get('contact', 'ContactController@contact');
+Route::post('contact', ['as'=>'contact.store','uses'=>'ContactController@contactPost']);
 
 
 Route::get('/about', function () {
