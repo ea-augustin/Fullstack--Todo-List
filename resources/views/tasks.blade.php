@@ -4,17 +4,14 @@
 
 <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown Button
+        Dropdown button
     </button>
-    <div id="dropmen" c type="text/javascript"lass="dropdown-menu" aria-labelledby="Tasks">
-        <ul>
-            <li><a class="dropdown-item" href="/1">Finances</a></li>
-            <li><a class="dropdown-item" href="/2">Démarch Administratives</a></li>
-            <li><a class="dropdown-item" href="/3">Divers</a></li>
-        </ul>
+    <div class="dropdown-menu" aria-labelledby="Tasks">
+        <a class="dropdown-item" href="/1">Finances</a>
+        <a class="dropdown-item" href="/2">Démarch Administratives</a>
+        <a class="dropdown-item" href="/3">Divers</a>
     </div>
 </div>
-
 
 <div class="container mt-10">
     <div class="row justify-content-center">
